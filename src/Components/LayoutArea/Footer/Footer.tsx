@@ -12,10 +12,10 @@ function Footer(): JSX.Element{
                 <img src={"images/free-mail-1437261-1216865.webp"} alt={"mail link"}/>
             </NavLink>
             <a href={"https://www.facebook.com/"} target={"_blank"} rel="noreferrer">
-                <img src={"/46-facebook-512.webp"} alt={"facebook link"}/>
+                <img src={"images/46-facebook-512.webp"} alt={"facebook link"}/>
             </a>
             <a href={"https://www.instagram.com/"} target={"_blank"} rel="noreferrer">
-                <img src={"/icon-media-social-instagram-free-vector.jpg"} alt={"instagram link"}/>
+                <img src={"images/icon-media-social-instagram-free-vector.jpg"} alt={"instagram link"}/>
             </a>
         </div>
     )

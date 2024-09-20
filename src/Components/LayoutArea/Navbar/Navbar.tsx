@@ -3,7 +3,7 @@
 function Navbar(): JSX.Element{
     return (
         <div>
-            Navbar
+            Nav
         </div>
     )
 }

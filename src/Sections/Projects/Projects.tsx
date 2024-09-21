@@ -1,4 +1,4 @@
-function Projects): JSX.Element {
+function Projects(): JSX.Element {
     return (
         <div>
             {/* Your content here */}

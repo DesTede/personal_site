@@ -1,5 +1,10 @@
 import {Route, Routes} from "react-router-dom";
-import IndexPage from "../../MainArea/IndexPAge/IndexPage";
+import About from "../../../Sections/About/About";
+import Contact from "../../../Sections/Contact/Contact";
+import Skills from "../../../Sections/Skills/Skills";
+import Experience from "../../../Sections/Experience/Experience";
+import Projects from "../../../Sections/Projects/Projects";
+
 
 
 function Routing(): JSX.Element{
@@ -7,9 +12,11 @@ function Routing(): JSX.Element{
     return (
         <div className="Routing">
             <Routes>
-                        {/* Discovery */}
-                <Route path={"/discovery"} element={<IndexPage/>} />
-                
+                <Route path={"/about"} element={<About/>} /> 
+                <Route path={"/skills"} element={<Skills/>}/>
+                <Route path={"/experience"} element={<Experience/>}/>
+                <Route path={"/projects"} element={<Projects/>}/>
+                <Route path={"/contact"} element={<Contact/>}/>
             </Routes>
         </div>
              

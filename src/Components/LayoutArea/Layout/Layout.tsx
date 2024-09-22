@@ -1,6 +1,11 @@
 import {BrowserRouter} from "react-router-dom";
 import Navbar from "../../Navbar/Navbar";
 import Footer from "../Footer/Footer";
+import Projects from "../../../Sections/Projects/Projects";
+import Experience from "../../../Sections/Experience/Experience";
+import Contact from "../../../Sections/Contact/Contact";
+import Skills from "../../../Sections/Skills/Skills";
+import About from "../../../Sections/About/About";
 
 function Layout(): JSX.Element{
     return (
@@ -9,19 +14,19 @@ function Layout(): JSX.Element{
                 <Navbar/>
                 
                 <section id={"about"}>
-                    About
+                    <About/>
                 </section>
                 <section id={"skills"}>
-                    Skills
+                    <Skills/>
                 </section>
                 <section id={"projects"}>
-                    Projects
+                    <Projects/>
                 </section>
                 <section id={"experience"}>
-                    Experience
+                    <Experience/>
                 </section>
                 <section id={"contact"}>
-                    Contact
+                    <Contact/>
                 </section>
                 <footer>
                     <Footer/>

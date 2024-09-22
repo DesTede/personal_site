@@ -6,12 +6,12 @@ const Contact = ()=> {
     const [formData, setFormData] = useState({name: "", email: "", message:""});
     const [status, setStatus] = useState(null);
     
-    const handleChange = (e)=> {
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>)=> {
         const {name, value} = e.target;
         setFormData({...formData, [name]: value});
     };
     
-    const handleSubmit = (e)=> {
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>)=> {
         e.preventDefault();
 
         const serviceId = "service_8ms886o"

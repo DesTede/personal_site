@@ -1,16 +1,19 @@
 import {BrowserRouter} from "react-router-dom";
 import Navbar from "../../Navbar/Navbar";
-import Routing from "../Routing/Routing";
-import Footer from "../Footer/Footer";
+// import Footer from "../Footer/Footer";
 
 function Layout(): JSX.Element{
     return (
         <div className="Layout">
             <BrowserRouter>
                 <Navbar/>
-                <main>
-                    <Routing/>
-                </main>
+                
+                <section id={"about"}>About</section>
+                <section id={"skills"}>Skills</section>
+                <section id={"projects"}>Projects</section>
+                <section id={"experience"}>Experience</section>
+                <section id={"contact"}>Contact</section>
+                    
                 <footer>
                     <Footer/>
                 </footer>

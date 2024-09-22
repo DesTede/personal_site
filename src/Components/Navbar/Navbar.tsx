@@ -6,6 +6,7 @@ function Navbar(): JSX.Element{
     return (
         <div className={"routing"}>
             <Routes>
+                <Route path={"/home"} element={<ScrollToSection sectionId={"home"}/> }/>
                 <Route path={"/about"} element={<ScrollToSection sectionId={"about"}/>}  />
                 <Route path={"/skills"} element={<ScrollToSection sectionId={"skills"}/>}/>
                 <Route path={"/experience"} element={<ScrollToSection sectionId={"experience"}/>}  />

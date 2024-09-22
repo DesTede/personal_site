@@ -1,7 +1,7 @@
 function Projects(): JSX.Element {
     return (
         <div>
-            Projects
+            Key Projects
         </div>
     );
 }

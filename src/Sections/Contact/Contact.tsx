@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import emailjs from "emailjs-com"
 import {Button, FormControl, FormLabel, TextField} from "@mui/material";
-import {useForm, useFormState} from "react-hook-form";
+import {useForm} from "react-hook-form";
 
 type FormData = {
     name: string;
@@ -12,7 +12,7 @@ type FormData = {
 const Contact = ()=> {
     // const [formData, setFormData] = useState({name: "", email: "", message:""});
     const [status, setStatus] = useState(null);
-    const {register, handleSubmit, setError,formState:{errors}} = useForm<FormData>({mode:"onChange"})
+    const {register, handleSubmit,formState:{errors}} = useForm<FormData>({mode:"onChange"})
     
     // const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>)=> {
     //     const {name, value} = e.target;

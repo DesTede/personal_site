@@ -19,12 +19,12 @@ const Contact = ()=> {
         const publicKey = "vjb14JMG4iXgWfwrQ"
 
         emailjs.send(serviceId, templateId, formData, publicKey)
-            .then((Response) => {
+            .then((response) => {
             setStatus("Success! Your message has been sent.")
             setFormData({name: "", email: "", message: ""}) 
-        },
-        (error) => {
-            setStatus("Error! Please try again.")
+        })
+            .catch((error) => {
+            setStatus("Error! Please try again.");
         })
         
     };
@@ -49,6 +49,7 @@ const Contact = ()=> {
             <button type={"submit"}>
                 Submit
             </button>
+            {status && <p>{status}</p>}
         </form>
     );
 }

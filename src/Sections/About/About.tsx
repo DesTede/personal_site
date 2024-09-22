@@ -16,12 +16,12 @@ function About(): JSX.Element {
                 I believe staying active fuels my creativity and problem-solving skills.
             </p>
             <p className={"skills"}>
-                Technologies I've worked with:
+                <span>Technologies I've worked with:</span>
                 <br/>
                 {/*Java, Spring,React,Mysql, typescript, CSS, Javascript,*/}
                 <img className="tech-logo" src={"/images/java-4-logo.svg"} alt={"Java"}/>
-                <img className="tech-logo" src={"/images/python-3-logo.svg"} alt={"Python"}/>
-                {/*<img className="tech-logo" src={"/images/spring_logo.svg"} alt={"Spring"}/>*/}
+                {/*<img className="tech-logo" src={"/images/Python_icon_(black_and_white).svg"} alt={"Python"}/>*/}
+                <img className="tech-logo" src={"/images/spring_logo.svg"} alt={"Spring"}/>
                 {/*<img className="tech-logo" src={"/images/mongodb.svg"} alt={"MongoDB"}/>*/}
                 <img className="tech-logo" src={"/images/mysql-.svg"} alt={"MySQL"}/>
                 <img className="tech-logo" src={"/images/react.svg"} alt={"ReactJS"}/>

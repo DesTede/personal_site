@@ -6,7 +6,11 @@ function Footer(): JSX.Element{
             <NavLink className={"aboutBtn"} to={"/about"}>About</NavLink>
             &nbsp;|&nbsp;
             <a href={"https://github.com/DesTede"} target={"_blank"} rel="noreferrer">
-                <img src={"images/GitHub-Mark-ea2971cee799.png"} alt={"github link"}/>
+                <img src={"images/github-white.svg"} alt={"Github"}/>
+            </a>
+            
+            <a href={"https://www.linkedin.com/in/des-tede/"} target={"_blank"} rel={"noreferrer"}>
+                <img src={"/images/linkedin-white.svg"} alt={"LinkedIn"}/>
             </a>
         </div>
     )

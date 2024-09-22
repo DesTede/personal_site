@@ -26,7 +26,7 @@ const Contact = ()=> {
         })
             .catch(() => {
             setStatus("Error! Please try again.");
-        })
+        });
         
     }
     

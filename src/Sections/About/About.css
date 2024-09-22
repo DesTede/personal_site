@@ -1,12 +1,19 @@
+.MeHeader{
+    font-size: larger;
+    font-weight: bold;
+}
+
+.skills{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
 .tech-logo{
-    width: 40px;
-    height: auto;
+    width: auto;
+    height: 40px;
     margin: 0 10px;
     display: inline-block;
     object-fit: contain;
 }
 
-.MeHeader{
-    font-size: larger;
-    font-weight: bold;
-}

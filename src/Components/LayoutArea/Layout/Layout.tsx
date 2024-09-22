@@ -23,7 +23,6 @@ function Layout(): JSX.Element{
                 <section id={"contact"}>
                     Contact
                 </section>
-                    
                 <footer>
                     <Footer/>
                 </footer>

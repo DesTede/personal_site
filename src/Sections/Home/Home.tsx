@@ -6,6 +6,7 @@ function Home(): JSX.Element {
                 Passionate Full stack developer
             </h3>
             <p>
+                
                 Full-Stack Developer specializing in Java & ReactJS, building dynamic, user-friendly applications.
             </p>
         </div>

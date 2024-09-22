@@ -5,3 +5,7 @@
     display: inline-block;
     object-fit: contain;
 }
+
+.MeHeader{
+    font-size: larger;
+}

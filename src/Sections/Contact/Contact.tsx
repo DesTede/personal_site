@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import emailjs from "emailjs-com"
+import {Button, FormControl, FormLabel, TextField} from "@mui/material";
 
 
 const Contact = ()=> {
@@ -27,30 +28,45 @@ const Contact = ()=> {
             setStatus("Error! Please try again.");
         })
         
-    };
+    }
+    
     
     return (
-        <form onSubmit={handleSubmit}>
-            <label>
-                Name:
-                <input type={"text"} name={"name"} value={formData.name} onChange={handleChange} required={true}/>
-            </label>
-            
-            <label>
-                Email:
-                <input type={"email"} name={"email"} value={formData.email} onChange={handleChange} required={true}/>
-            </label>
-            
-            <label>
-                Message:
-                <input type={"text"} name={"message"} value={formData.message} onChange={handleChange} minLength={20} required={true}/>
-            </label>
-            
-            <button type={"submit"}>
-                Submit
-            </button>
-            {status && <p>{status}</p>}
-        </form>
+        <div className="Contact" >
+            <FormControl>
+                <FormLabel>Reach out</FormLabel>
+                <TextField 
+                    className={"TextField"}
+                    variant={"outlined"}
+                    label={"Full name"}
+                    id={"name"}
+                    value={formData.name}
+                    onBlur={handleChange}
+                    required={true}
+                />
+                <TextField 
+                    className={"TextField"}
+                    variant={"outlined"}
+                    label={"Email"}
+                    id={"email"}
+                    value={formData.email}
+                    onBlur={handleChange}
+                    required={true}
+                />
+                <TextField
+                    className={"TextField"}
+                    variant={"outlined"}
+                    label={"Message"}
+                    id={"message"}
+                    value={formData.message}
+                    onBlur={handleChange}
+                    required={true}
+                />
+                <Button type={"submit"} variant={"contained"} color={"primary"} >
+                    Submit
+                </Button>
+            </FormControl>
+        </div>
     );
 }
 

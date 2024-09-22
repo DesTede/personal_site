@@ -4,8 +4,8 @@ import './About.css';
 function About(): JSX.Element {
     return (
         <div>
-            <h1>ABout Me.</h1>
             <p className={"AboutMe"}>
+                <div className={"Me"}>ABout Me.</div>
                 as Full-Stack Developer with expertise in Java and ReactJS, My journey started in mechanical engineering, where I learned to appreciate the precision
                 of design—skills I now apply to coding.
                 passionate about creating scalable APIs and seamless user experiences.
@@ -17,6 +17,7 @@ function About(): JSX.Element {
             </p>
             <p className={"skills"}>
                 Technologies I've worked with:
+                <hr/>
                 {/*Java, Spring,React,Mysql, typescript, CSS, Javascript,*/}
                 <img className="tech-logo" src={"/images/java-4-logo.svg"} alt={"Java"}/>
                 <img className="tech-logo" src={"/images/python-3-logo.svg"} alt={"Python"}/>

@@ -1,7 +1,8 @@
 function About(): JSX.Element {
     return (
         <div>
-            {/* Your content here */}
+            ABout
+        {/*    add a CV download option!*/}
         </div>
     );
 }

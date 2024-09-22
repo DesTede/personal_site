@@ -1,7 +1,7 @@
 function Skills(): JSX.Element {
     return (
         <div>
-            {/* Your content here */}
+            Skills
         </div>
     );
 }

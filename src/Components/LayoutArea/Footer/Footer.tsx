@@ -3,7 +3,7 @@ import "./Footer.css";
 function Footer(): JSX.Element{
     return (
         <div className="Footer">
-            <NavLink className={"aboutBtn"} to={"/aboutemporium"}>About Us</NavLink>
+            <NavLink className={"aboutBtn"} to={"/about"}>About Us</NavLink>
             &nbsp;|&nbsp;
             <a href={"https://github.com/DesTede"} target={"_blank"} rel="noreferrer">
                 <img src={"images/GitHub-Mark-ea2971cee799.png"} alt={"github link"}/>

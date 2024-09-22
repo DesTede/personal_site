@@ -35,10 +35,11 @@ const Contact = ()=> {
         <div className="Contact" >
             <form onSubmit={handleSubmit}>
                 <FormControl >
-                    <FormLabel>Reach out</FormLabel>
+                    <FormLabel >Reach out</FormLabel>
                     <TextField 
                         className={"TextField"}
                         variant={"outlined"}
+                        name={"name"}
                         label={"Full name"}
                         id={"name"}
                         value={formData.name}
@@ -50,6 +51,7 @@ const Contact = ()=> {
                         variant={"outlined"}
                         label={"Email"}
                         id={"email"}
+                        name={"email"}
                         value={formData.email}
                         onChange={handleChange}
                         required={true}
@@ -59,6 +61,7 @@ const Contact = ()=> {
                         variant={"outlined"}
                         label={"Message"}
                         id={"message"}
+                        name={"message"}
                         value={formData.message}
                         onChange={handleChange}
                         required={true}

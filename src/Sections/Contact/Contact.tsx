@@ -20,11 +20,11 @@ const Contact = ()=> {
         const publicKey = "vjb14JMG4iXgWfwrQ"
 
         emailjs.send(serviceId, templateId, formData, publicKey)
-            .then((response) => {
+            .then(() => {
             setStatus("Success! Your message has been sent.")
             setFormData({name: "", email: "", message: ""}) 
         })
-            .catch((error) => {
+            .catch(() => {
             setStatus("Error! Please try again.");
         })
         
@@ -33,39 +33,42 @@ const Contact = ()=> {
     
     return (
         <div className="Contact" >
-            <FormControl>
-                <FormLabel>Reach out</FormLabel>
-                <TextField 
-                    className={"TextField"}
-                    variant={"outlined"}
-                    label={"Full name"}
-                    id={"name"}
-                    value={formData.name}
-                    onBlur={handleChange}
-                    required={true}
-                />
-                <TextField 
-                    className={"TextField"}
-                    variant={"outlined"}
-                    label={"Email"}
-                    id={"email"}
-                    value={formData.email}
-                    onBlur={handleChange}
-                    required={true}
-                />
-                <TextField
-                    className={"TextField"}
-                    variant={"outlined"}
-                    label={"Message"}
-                    id={"message"}
-                    value={formData.message}
-                    onBlur={handleChange}
-                    required={true}
-                />
-                <Button type={"submit"} variant={"contained"} color={"primary"} >
-                    Submit
-                </Button>
-            </FormControl>
+            <form onSubmit={handleSubmit}>
+                <FormControl >
+                    <FormLabel>Reach out</FormLabel>
+                    <TextField 
+                        className={"TextField"}
+                        variant={"outlined"}
+                        label={"Full name"}
+                        id={"name"}
+                        value={formData.name}
+                        onChange={handleChange}
+                        required={true}
+                    />
+                    <TextField 
+                        className={"TextField"}
+                        variant={"outlined"}
+                        label={"Email"}
+                        id={"email"}
+                        value={formData.email}
+                        onChange={handleChange}
+                        required={true}
+                    />
+                    <TextField
+                        className={"TextField"}
+                        variant={"outlined"}
+                        label={"Message"}
+                        id={"message"}
+                        value={formData.message}
+                        onChange={handleChange}
+                        required={true}
+                    />
+                    <Button type={"submit"} variant={"contained"} color={"primary"}  >
+                        Submit
+                    </Button>
+                </FormControl>
+                {status && <p>{status}</p>}
+            </form>
         </div>
     );
 }

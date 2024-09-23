@@ -8,7 +8,7 @@ function Navbar(): JSX.Element{
             <Routes>
                 <Route path={"/home"} element={<ScrollToSection sectionId={"home"}/> }/>
                 <Route path={"/about"} element={<ScrollToSection sectionId={"about"}/>}  />
-                <Route path={"/experience"} element={<ScrollToSection sectionId={"experience"}/>}  />
+                {/*<Route path={"/skills"} element={<ScrollToSection sectionId={"skills"}/>}  />*/}
                 <Route path={"/projects"} element={<ScrollToSection sectionId={"projects"}/>}  />
                 <Route path={"/contact"} element={<ScrollToSection sectionId={"contact"}/>}  />
             </Routes>

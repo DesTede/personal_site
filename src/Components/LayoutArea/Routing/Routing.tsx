@@ -1,7 +1,7 @@
 import {Route, Routes} from "react-router-dom";
 import About from "../../../Sections/About/About";
 import Contact from "../../../Sections/Contact/Contact";
-import Experience from "../../../Sections/Experience/Experience";
+import Skills from "../../../Sections/Skills/Skills";
 import Projects from "../../../Sections/Projects/Projects";
 
 
@@ -12,7 +12,7 @@ function Routing(): JSX.Element{
         <div className="Routing">
             <Routes>
                 <Route path={"/about"} element={<About/>} /> 
-                <Route path={"/experience"} element={<Experience/>}/>
+                <Route path={"/experience"} element={<Skills/>}/>
                 <Route path={"/projects"} element={<Projects/>}/>
                 <Route path={"/contact"} element={<Contact/>}/>
             </Routes>

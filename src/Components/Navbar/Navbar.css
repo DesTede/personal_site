@@ -1,0 +1,16 @@
+.navbar a{
+    text-decoration: none;
+    color: inherit;
+    padding: 10px;
+}
+
+.navbar a:focus,
+.navbar a:hover {
+    color: black; /* Change color on hover or focus */
+    outline: none; /* Remove outline */
+}
+
+.navbar a.active{
+    color: black;
+    font-weight: bolder;
+}

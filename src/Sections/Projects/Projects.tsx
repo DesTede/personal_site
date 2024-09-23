@@ -16,7 +16,7 @@ function Projects(): JSX.Element {
             <span className={"App-logo"}>Rest APIs</span>
             <Button className={"GitBttn"}>
                 <a href={"https://github.com/DesTede?tab=repositories"}>
-                    <img src={"github_black_logo_icon_147128.svg"} alt={"GitHub link"}/>
+                    <img src={"/images/github_black_logo_icon_147128.svg"} alt={"GitHub link"}/>
                 </a>
             </Button>
 

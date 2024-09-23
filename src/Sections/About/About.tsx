@@ -33,7 +33,7 @@ function About(): JSX.Element {
                 <img className="tech-logo" src={"/images/typescript.svg"} alt={"TypeScript"}/>
                 <img className="tech-logo" src={"/images/javascript-.svg"} alt={"JavaScript"}/>
                 <img className="tech-logo" src={"/images/html5-balck-icon.svg"} alt={"HTML"}/>
-                <img className="tech-logo" src={"/images/css3.svg"} alt={"CSS"}/>
+                <img className="tech-logo" src={"/images/css-4.svg"} alt={"CSS"}/>
                 <img className={"tech-logo"} src={"/images/github_black_logo_icon_147128.svg"} alt={"GitHub logo"}/>
             </p>
 

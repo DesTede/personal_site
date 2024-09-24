@@ -1,8 +1,17 @@
+.home-section {
+    display: flex;        
+    flex-direction: column;
+    justify-content: center;
+    height: 90vh;                
+}
+
 .HomeHeader1{
     font-weight: bolder;
-    font-size: larger;
+    font-size: 4vw;
+    margin-bottom: 0;
 }
 .HomeHeader2{
     font-weight: bold;
     font-size: medium;
+    /*margin-bottom: 1px;*/
 }

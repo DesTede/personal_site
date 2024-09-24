@@ -1,6 +1,26 @@
-.Footer img{
-    width:20px;
-    height:20px;
-    margin-right:3px;
-    margin-left:3px;
+.Footer {
+    display: flex;
+    align-items: center;
+    
+}
+
+.footer-profile{
+    width:40%;
+    height:auto;
+    margin-right:10%;
+    margin-left:10vw;
+    border-radius: 90%;
+    object-fit: cover;
+}
+.footer-links{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    margin-left: auto;
+}
+.footer-link {
+    width: 12vw;
+    height: 3vw;
+    margin-top: 7%; /* Space between links */
+    /*margin-left: auto;*/
 }

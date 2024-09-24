@@ -2,7 +2,7 @@ import {Button} from "@mui/material";
 import "./Projects.css"
 function Projects(): JSX.Element {
     return (
-        <p>
+        <div className={"Project"}>
             <div className={"project-header-main"}>Projects.</div>
 
             <div className={"project-header-sub"}>Coupons management System</div>
@@ -36,7 +36,7 @@ function Projects(): JSX.Element {
             <span className={"App-logo"}>TypeScript</span>
             </div>
 
-        </p>
+        </div>
     );
 }
 

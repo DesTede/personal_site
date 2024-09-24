@@ -1,18 +1,24 @@
 .AboutMe{
     text-align: left;
-    
+    height: 80vh;
+    position: relative;
 }
 
-.MeHeader{
-    font-size: larger;
+.home-header{
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+.tech-header {
     font-weight: bold;
 }
 
 .skills{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
     margin-top: 10px;
+    margin-bottom: 3vw;
 }
 .tech-logo{
     width: auto;
@@ -20,5 +26,23 @@
     margin: 0 10px;
     display: inline-block;
     object-fit: contain;
+    
+}
+
+.cv-button {
+    display: inline-block;
+    text-align: center;
+    margin: 20px auto; /* Centers the button horizontally */
+    padding: 10px 20px;
+    /*transition: transform 0.3s;*/
+    position: relative; /* This ensures it behaves well within the flex container */
+    left: 50%; /* Position it halfway across the container */
+    transform: translateX(-50%); /* Shift it back to center */
+    border-radius: 50%;
+}
+
+.cv-button:hover {
+    /*transform: scale(1.1);*/
+    transform: translateX(-50%) scale(1.1);
 }
 

@@ -1,16 +1,52 @@
-.navbar a{
-    text-decoration: none;
-    color: inherit;
-    padding: 10px;
+.navb {
+    position: sticky;  /* Ensure the navbar stays at the top */
+    top: 0;  /* Position at the top */
+    width: 100%;  /* Full width */
+    /*display: flex;  !* Use flexbox *!*/
+    justify-content: right;  /* Align links to the right */
+    /*padding: 10px; !* Add padding for spacing *!*/
+    padding-right: 500px;
+    padding-left: 30vw;
+    
 }
 
-.navbar a:focus,
-.navbar a:hover {
-    color: black; /* Change color on hover or focus */
-    outline: none; /* Remove outline */
+.navb a {
+    text-decoration: none;  /* Remove underline from links */
+    color: inherit;  /* Use the inherited color */
+    padding: 0.5vw;  /* Space around each link */
 }
 
-.navbar a.active{
-    color: black;
-    font-weight: bolder;
+.navb a:focus,
+.navb a:hover {
+    color: black;  /* Change color on hover or focus */
+    outline: none;  /* Remove outline */
 }
+
+.navb a.active {
+    color: black;  /* Color for active link */
+    font-weight: bolder;  /* Bold for active link */
+}
+
+/*.navb {*/
+/*    !*position: sticky;*!*/
+/*    display: flex;*/
+/*    justify-content: flex-end;*/
+/*    width: 100%;*/
+/*}*/
+
+/*.navb a{*/
+/*    text-decoration: none;*/
+/*    color: inherit;*/
+/*    padding: 10px;*/
+/*}*/
+
+/*.navb a:focus,*/
+/*.navb a:hover {*/
+/*    color: black; !* Change color on hover or focus *!*/
+/*    outline: none; !* Remove outline *!*/
+/*}*/
+
+/*.navb a.active{*/
+/*    color: black;*/
+/*    font-weight: bolder;*/
+/*}*/

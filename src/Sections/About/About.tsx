@@ -1,12 +1,16 @@
 import {Button} from "@mui/material";
 import './About.css';
 
+
 function About(): JSX.Element {
+    
+    
+    
     return (
-        <div>
-            <div className={"AboutMe"}>
+        <div className={"AboutMe"}>
+            <div className={""}>
                 <p>
-                <div className={"MeHeader"}>ABout Me.</div>
+                <div className={"home-header"}>ABout Me.</div>
                 As a Full-Stack Developer with a strong focus on backend technologies,
                 I specialize in Java and ReactJS, building scalable APIs and robust server-side solutions.
                 My journey started in mechanical engineering,
@@ -23,9 +27,8 @@ function About(): JSX.Element {
                 </p>
                 
             </div>
-
-
-            <div>Technologies I've worked with:</div>
+            
+            <div className={"tech-header"}>Technologies I've worked with:</div>
             <p className={"skills"}>
                 <img className="tech-logo" src={"/images/java-4-logo.svg"} alt={"Java"}/>
                 {/*<img className="tech-logo" src={"/images/Python_icon_(black_and_white).svg"} alt={"Python"}/>*/}
@@ -42,8 +45,14 @@ function About(): JSX.Element {
                 
             </p>
 
-            <Button variant={"contained"} color={"primary"} download
-                    href={"https://drive.google.com/file/d/11se1_3aQWGyJFTSrGnvsKTNePdDsPyId/view?usp=sharing"}>
+            <Button className={"cv-button"}  variant={"contained"} sx={{
+                backgroundColor: 'black',
+                color: 'white',
+                '&:hover': {
+                    transition: 'transform 0.3s',
+                }, borderRadius: '40px',
+            }}
+                    download href={"https://drive.google.com/file/d/11se1_3aQWGyJFTSrGnvsKTNePdDsPyId/view?usp=sharing"}>
                 Download my CV
             </Button>
             

@@ -11,25 +11,28 @@ function Layout(): JSX.Element{
     return (
         <div className="Layout">
             <BrowserRouter>
+                <Navbar/>
+                <div className={"sections"}>
+                    
+                    <section id="home">
+                        <Home />
+                    </section>
+                    <section id="about">
+                        <About />
+                    </section>
+                    {/* <section id="skills"> */}
+                    {/*    <Skills /> */}
+                    {/* </section> */}
+                    <section id="projects">
+                        <Projects />
+                    </section>
+                    <section id="contact">
+                        <Contact />
+                    </section>
+                </div>
+
                 
-                <Navbar />
-                
-                <section id="home">
-                    <Home />
-                </section>
-                <section id="about">
-                    <About />
-                </section>
-                {/* <section id="skills"> */}
-                {/*    <Skills /> */}
-                {/* </section> */}
-                <section id="projects">
-                    <Projects />
-                </section>
-                <section id="contact">
-                    <Contact />
-                </section>
-                <footer>
+                <footer className={"Footer"}>
                     <Footer/>
                 </footer>
             </BrowserRouter>

@@ -1,5 +1,4 @@
 import "./Footer.css";
-import linkedinLogo from "./images/linkedin.svg"
 
 function Footer(): JSX.Element{
     return (

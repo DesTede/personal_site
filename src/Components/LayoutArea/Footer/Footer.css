@@ -9,18 +9,37 @@
     height:auto;
     margin-right:10%;
     margin-left:10vw;
-    border-radius: 90%;
+    border-radius: 50%;
     object-fit: cover;
 }
+
 .footer-links{
     display: flex;
     align-items: flex-end;
     flex-direction: column;
     margin-left: auto;
+
 }
-.footer-link {
-    width: 12vw;
+
+.footer-links a {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    padding: 10%;
+    /*margin: 0;*/
+    margin-right: 10%;
+}
+.footer-link-logo {
+    width: 6vw;
     height: 3vw;
-    margin-top: 7%; /* Space between links */
-    /*margin-left: auto;*/
+    margin-top: 15%;
+    /*margin-right: 10%;*/
+    border-radius: 50%;
+    display: block;
+    pointer-events: none;
 }
+
+.footer-link-logo img {
+    pointer-events: auto;
+}
+

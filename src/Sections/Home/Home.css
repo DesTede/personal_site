@@ -8,6 +8,7 @@
 .HomeHeader1{
     font-weight: bolder;
     font-size: 4vw;
+    min-font-size: 20px;
     margin-bottom: 0;
 }
 .HomeHeader2{

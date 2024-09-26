@@ -1,15 +1,35 @@
 .Project {
-    height: 80vh;
+    text-align: left;
+    height: 60vh;
+    position: relative;
+    margin-bottom: 10rem;
+
 }
 
+.Project .project-section {
+    margin-top: 5%;
+}
 .project-header-main{
-    font-size: larger;
+    font-size: 2.5rem;
     font-weight: bold;
 }
-.link-logo{
-    width: auto;
-    height: 30px;
-    margin: 0 10px;
-    display: inline-block;
-    object-fit: contain;
+
+.project-header-sub {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 1.5rem;
 }
+
+
+
+
+
+.linkLogo {
+    margin-top: 15px;
+}
+
+
+.App-logo {
+    margin-right: 10px;
+}
+

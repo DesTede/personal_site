@@ -52,7 +52,7 @@ function About(): JSX.Element {
                     transition: 'transform 0.3s',
                 }, borderRadius: '40px',
             }}
-                    download href={"https://drive.google.com/file/d/11se1_3aQWGyJFTSrGnvsKTNePdDsPyId/view?usp=sharing"}>
+                    download href={"https://drive.google.com/file/d/11se1_3aQWGyJFTSrGnvsKTNePdDsPyId/view?usp=sharing"} target={"_blank"}>
                 Download my CV
             </Button>
             

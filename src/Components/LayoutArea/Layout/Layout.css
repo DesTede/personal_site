@@ -3,26 +3,29 @@
 /*html{*/
 /*    scroll-behavior: smooth;*/
 /*}*/
+
 .Layout{
     display: flex;
     flex-direction: column;
     height: 100vh;
     overflow: hidden;
     width: 100%;
+    
+    
+    
+    
 }
 
+    
+
 .Layout .sections {
-    flex: 1;
-    /*height: 10px;*/
+    flex-grow: 1;
     overflow-y: auto;
     padding: 3% 48% 5% 20px;
     margin-bottom: 2%;
-    /*padding-right: 48%;*/
-    /*padding-left: 20px;*/
-    /*padding-top: 3%;*/
-    /*padding-bottom: 5%;*/
-    
+
 }
+
 
 .Footer{
     position: fixed;

@@ -14,6 +14,7 @@ function Layout(): JSX.Element{
                 <Navbar/>
                 <div className={"sections"}>
                     
+                    
                     <section id="home">
                         <Home />
                     </section>

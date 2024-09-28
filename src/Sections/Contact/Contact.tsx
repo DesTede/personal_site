@@ -12,13 +12,9 @@ type FormData = {
 
 const Contact = ()=> {
     // const [formData, setFormData] = useState({name: "", email: "", message:""});
-    const [status, setStatus] = useState(null);
+    const [status, setStatus] = useState<string | null>(null);
     const {register, handleSubmit, reset, formState:{errors}} = useForm<FormData>({mode:"onChange"})
     
-    // const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>)=> {
-    //     const {name, value} = e.target;
-    //     setFormData({...formData, [name]: value});
-    // };
     
     const onSubmit = (data: FormData)=> {
         // e.preventDefault();
@@ -90,7 +86,7 @@ const Contact = ()=> {
                                 minLength: 2,
                                 maxLength: 100 
                         })}
-                        error={!!errors.name}
+                        error={!!errors.email}
                         helperText={errors.email ? "Email must be between 2 and 100 characters" : ""}
                     />
                     <TextField
@@ -109,7 +105,7 @@ const Contact = ()=> {
                                 maxLength: 100
                         })}
 
-                        error={!!errors.name}
+                        error={!!errors.message}
                         helperText={errors.message ? "message must be between 2 and 100 characters" : ""}
                     />
                     <Button type={"submit"} variant={"contained"} color={"primary"} sx={{borderRadius:'15px', backgroundColor: 'black'}} >

@@ -1,19 +1,16 @@
-import Navbar from "../../Navbar/Navbar";
+import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
-import Projects from "../../../Sections/Projects/Projects";
-import Contact from "../../../Sections/Contact/Contact";
-import About from "../../../Sections/About/About";
-import Home from "../../../Sections/Home/Home";
-import {BrowserRouter} from "react-router-dom";
+import Projects from "../../Sections/Projects/Projects";
+import Contact from "../../Sections/Contact/Contact";
+import About from "../../Sections/About/About";
+import Home from "../../Sections/Home/Home";
 import "./Layout.css"
 
 function Layout(): JSX.Element{
     return (
         <div className="Layout">
-            <BrowserRouter>
                 <Navbar/>
                 <div className={"sections"}>
-                    
                     
                     <section id="home">
                         <Home />
@@ -21,9 +18,6 @@ function Layout(): JSX.Element{
                     <section id="about">
                         <About />
                     </section>
-                    {/* <section id="skills"> */}
-                    {/*    <Skills /> */}
-                    {/* </section> */}
                     <section id="projects">
                         <Projects />
                     </section>
@@ -31,12 +25,9 @@ function Layout(): JSX.Element{
                         <Contact />
                     </section>
                 </div>
-
-                
                 <footer className={"Footer"}>
                     <Footer/>
                 </footer>
-            </BrowserRouter>
         </div>
     );
 

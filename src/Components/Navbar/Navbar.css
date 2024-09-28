@@ -3,11 +3,12 @@
     top: 0;  /* Position at the top */
     width: 100%;  /* Full width */
     /*display: flex;  !* Use flexbox *!*/
-    justify-content: right;  /* Align links to the right */
+    /*justify-content: right;  !* Align links to the right *!*/
     /*padding: 10px; !* Add padding for spacing *!*/
-    padding-right: 500px;
-    padding-left: 30vw;
-    
+    /*padding-right: 10rem;*/
+    /*padding-left: 45%;*/
+    margin-left: 70vh;
+    /*background-color: white;*/
 }
 
 .navb a {

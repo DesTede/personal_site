@@ -12,17 +12,14 @@
 
 .project-header-main{
     font-size: 2.5rem;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 .project-header-sub {
     font-size: 1.5rem;
-    font-weight: bold;
+    font-weight: bolder;
     /*margin-top: 1.5rem;*/
 }
-
-
-
 
 
 .linkLogo {
@@ -34,4 +31,11 @@
 /*.App-logo {*/
 /*    margin-right: 10px;*/
 /*}*/
+
+@media (max-width: 768px) {
+
+    .App-logo {
+        margin-top: 1rem;
+    }
+}
 

@@ -1,9 +1,9 @@
 .Contact {
-    text-align: left;
+    /*text-align: left;*/
     /*height: 60vh;*/
     position: relative;
-    margin-top: 15rem;
-    margin-bottom: 5rem;
+    margin-top: 30%;
+    margin-bottom: 8rem;
 }
 
 .contact-main-header {

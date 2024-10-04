@@ -1,5 +1,7 @@
 import {Button, styled, Tooltip, tooltipClasses, TooltipProps} from "@mui/material";
 import './About.css';
+import React from "react";
+import ScrollReveal from "../../Hooks/ScrollReveal";
 
 
 const CustomTooltip = styled(({ className, ...props }: TooltipProps) => (
@@ -30,13 +32,21 @@ function About(): JSX.Element {
     return (
         <div className={"AboutMe"}>
                 
+            <ScrollReveal>
                 <div className={"home-header"}>ABout Me.</div>
+            </ScrollReveal>
+            
+            <ScrollReveal>
                 <p>
                 As a Full-Stack Developer with a strong focus on backend technologies,
                 I specialize in Java and ReactJS, building scalable APIs and robust server-side solutions.
                 My journey started in mechanical engineering,
                 where I honed my attention to detail and problem-solving skills—attributes I now apply to backend
                 architecture and design.
+                    </p>
+            </ScrollReveal>
+            <ScrollReveal>
+            <p>
                 While I’m capable on both the frontend and backend, my passion lies in developing efficient backend
                 systems that power seamless user experiences.
                 When I’m not deep in code, I’m out exploring the world. I have a love for backpacking, discovering
@@ -46,26 +56,14 @@ function About(): JSX.Element {
                 race,
                 staying active helps fuel my creativity and sharpens my problem-solving skills.
                 </p>
-                
+            </ScrollReveal>
             
+            <ScrollReveal>
             <div className={"tech-header"}>Technologies I've worked with:</div>
+            </ScrollReveal>
+            
+            <ScrollReveal>
             <div className={"skills"}>
-                {/*<CustomTooltip  title={"Java"} arrow placement={"bottom"} >*/}
-                {/*    <img className="tech-logo" src={"/images/java-4-logo.svg"}  alt={"Java"}/>*/}
-                {/*</CustomTooltip>*/}
-                
-                {/*/!*<img className="tech-logo" src={"/images/Python_icon_(black_and_white).svg"} title={"Python"} alt={"Python"}/>*!/*/}
-                {/*<img className="tech-logo" src={"/images/spring_logo.svg"} title={"Spring"} alt={"Spring"}/>*/}
-                {/*<img className={"tech-logo"} src={"/images/nodejs-icon-logo.svg"} title={"NodeJS"} alt={"NodeJS"}/>*/}
-                {/*/!*<img className="tech-logo" src={"/images/mongodb.svg"} title={"MongoDB"} alt={"MongoDB"}/>*!/*/}
-                {/*<img className="tech-logo" src={"/images/mysql-.svg"} title={"MySQL"} alt={"MySQL"}/>*/}
-                {/*<img className="tech-logo" src={"/images/react.svg"} title={"ReactJS"} alt={"ReactJS"}/>*/}
-                {/*<img className="tech-logo" src={"/images/typescript.svg"} title={"TypeScript"} alt={"TypeScript"}/>*/}
-                {/*<img className="tech-logo" src={"/images/javascript-.svg"} title={"JavaScript"} alt={"JavaScript"}/>*/}
-                {/*<img className="tech-logo" src={"/images/html5-balck-icon.svg"} title={"HTML"} alt={"HTML"}/>*/}
-                {/*<img className="tech-logo" src={"/images/css-4.svg"} title={"CSS"}  alt={"CSS"}/>*/}
-                {/*<img className={"tech-logo-link"} src={"/images/github_black_logo_icon_147128.svg"} title={"GitHub"} alt={"GitHub link"}/>*/}
-
                 <CustomTooltip title={"Java"} arrow placement={"bottom"}>
                     <img className="tech-logo" src={"/images/java-4-logo.svg"} alt={"Java"} />
                 </CustomTooltip>
@@ -114,10 +112,10 @@ function About(): JSX.Element {
                 <CustomTooltip title={"GitHub"} arrow placement={"top"}>
                     <img className="tech-logo-link" src={"/images/github_black_logo_icon_147128.svg"} alt={"GitHub link"} />
                 </CustomTooltip>
-                
-                
             </div>
+            </ScrollReveal>
 
+            <ScrollReveal>
             <Button className={"cv-button"}  variant={"contained"} sx={{
                 backgroundColor: 'black',
                 color: 'white',
@@ -128,7 +126,7 @@ function About(): JSX.Element {
                     download href={"https://drive.google.com/file/d/11se1_3aQWGyJFTSrGnvsKTNePdDsPyId/view?usp=sharing"} target={"_blank"}>
                 Download my CV
             </Button>
-            
+            </ScrollReveal>
         </div>
     );
 }

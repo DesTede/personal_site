@@ -3,6 +3,7 @@ import emailjs from "emailjs-com"
 import {Button, FormControl, TextField} from "@mui/material";
 import {useForm} from "react-hook-form";
 import "./Contact.css";
+import ScrollReveal from "../../Hooks/ScrollReveal";
 
 type FormData = {
     name: string;
@@ -46,9 +47,14 @@ const Contact = ()=> {
     return (
         <div className="Contact" >
             <form onSubmit={handleSubmit(onSubmit)}>
+                
                 <FormControl  >
+                    <ScrollReveal>
                     <div className={"contact-main-header"} >Reach out.</div>
+                    </ScrollReveal>
+                    <ScrollReveal>
                     <div className={"contact-sub-header"}>If you have any questions or just want to say hi (or even share your best dad joke), feel free to reach out—I'm all ears! </div>
+                    </ScrollReveal>
                     
                     <TextField 
                         className={"TextField"}

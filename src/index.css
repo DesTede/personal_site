@@ -11,7 +11,7 @@ body, html, #root {
   /*margin: 0;*/
   /*height: 100%;*/
   /*overflow: auto;*/
-  overflow-x: hidden;
+  
   /*direction: ltr;*/
   /*color: black;*/
   font-family: 'Poppins', sans-serif;
@@ -19,4 +19,10 @@ body, html, #root {
 
 html{
   scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+  body, html, #root {
+    overflow-x: hidden;
+  }
 }

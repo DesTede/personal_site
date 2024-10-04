@@ -1,5 +1,7 @@
 import {Box, Button} from "@mui/material";
 import "./Projects.css"
+
+
 function Projects(): JSX.Element {
     return (
         <div className={"Project"}>

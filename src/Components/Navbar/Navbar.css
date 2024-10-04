@@ -1,53 +1,48 @@
-.navb {
-    position: sticky;  /* Ensure the navbar stays at the top */
-    top: 0;  /* Position at the top */
-    width: 100%;  /* Full width */
-    /*display: flex;  !* Use flexbox *!*/
-    /*justify-content: right;  !* Align links to the right *!*/
-    /*padding: 10px; !* Add padding for spacing *!*/
-    /*padding-right: 10rem;*/
-    /*padding-left: 45%;*/
-    margin-left: 70vh;
-    /*background-color: white;*/
+.navbar {
+    position: fixed; /* Keep the navbar fixed at the top */
+    top: 0;
+    /*left: 0;*/
+    right: 45%;
+    /*background-color: white; !* Set background color *!*/
+    z-index: 1000; /* Ensure it's on top */
+    display: flex;
+    flex-direction: row; /* Horizontal layout */
+    padding: 10px;
+    /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); !* Optional shadow *!*/
 }
 
-.navb a {
-    text-decoration: none;  /* Remove underline from links */
-    color: inherit;  /* Use the inherited color */
-    padding: 0.5vw;  /* Space around each link */
+.navbar a {
+    color: black; /* Default text color */
+    margin: 0 15px; /* Space between links */
+    text-decoration: none; /* Remove underline */
 }
 
-.navb a:focus,
-.navb a:hover {
-    color: black;  /* Change color on hover or focus */
-    outline: none;  /* Remove outline */
+.navbar a:hover {
+    color: black; /* Change color on hover */
+    font-weight: bolder;
 }
 
-.navb a.active {
-    color: black;  /* Color for active link */
-    font-weight: bolder;  /* Bold for active link */
+.navbar .active {
+    font-weight: bold; /* Bold text for active section */
 }
 
-/*.navb {*/
-/*    !*position: sticky;*!*/
-/*    display: flex;*/
-/*    justify-content: flex-end;*/
-/*    width: 100%;*/
-/*}*/
+.menu-icon {
+    display: none; /* Hide menu icon by default */
+}
 
-/*.navb a{*/
-/*    text-decoration: none;*/
-/*    color: inherit;*/
-/*    padding: 10px;*/
-/*}*/
+/* Media query for mobile view */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack links vertically */
+        display: none; /* Hide navbar initially */
+    }
 
-/*.navb a:focus,*/
-/*.navb a:hover {*/
-/*    color: black; !* Change color on hover or focus *!*/
-/*    outline: none; !* Remove outline *!*/
-/*}*/
+    .navbar.hidden {
+        display: none; /* Keep hidden when not toggled */
+    }
 
-/*.navb a.active{*/
-/*    color: black;*/
-/*    font-weight: bolder;*/
-/*}*/
+    .navbar .menu-icon {
+        display: block; /* Show hamburger icon */
+        cursor: pointer; /* Show pointer on hover */
+    }
+}

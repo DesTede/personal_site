@@ -1,5 +1,26 @@
-import {Button} from "@mui/material";
+import {Button, styled, Tooltip, tooltipClasses, TooltipProps} from "@mui/material";
 import './About.css';
+
+
+const CustomTooltip = styled(({ className, ...props }: TooltipProps) => (
+    <Tooltip {...props} arrow classes={{ popper: className }}   slotProps={{
+        popper: {
+            modifiers: [
+                {
+                    name: 'offset',
+                    options: { offset: [0, 8] }, 
+                }
+            ]
+        }
+    }} />
+))(({ theme }) => ({
+    [`& .${tooltipClasses.arrow}`]: {
+        color: theme.palette.common.black,
+    },
+    [`& .${tooltipClasses.tooltip}`]: {
+        backgroundColor: theme.palette.common.black, 
+    }, 
+}));
 
 
 function About(): JSX.Element {
@@ -8,9 +29,9 @@ function About(): JSX.Element {
     
     return (
         <div className={"AboutMe"}>
-            <div className={""}>
-                <p>
+                
                 <div className={"home-header"}>ABout Me.</div>
+                <p>
                 As a Full-Stack Developer with a strong focus on backend technologies,
                 I specialize in Java and ReactJS, building scalable APIs and robust server-side solutions.
                 My journey started in mechanical engineering,
@@ -26,24 +47,76 @@ function About(): JSX.Element {
                 staying active helps fuel my creativity and sharpens my problem-solving skills.
                 </p>
                 
-            </div>
             
             <div className={"tech-header"}>Technologies I've worked with:</div>
-            <p className={"skills"}>
-                <img className="tech-logo" src={"/images/java-4-logo.svg"} alt={"Java"}/>
-                {/*<img className="tech-logo" src={"/images/Python_icon_(black_and_white).svg"} alt={"Python"}/>*/}
-                <img className="tech-logo" src={"/images/spring_logo.svg"} alt={"Spring"}/>
-                <img className={"tech-logo"} src={"/images/nodejs-icon-logo.svg"} alt={"NodeJS"}/>
-                {/*<img className="tech-logo" src={"/images/mongodb.svg"} alt={"MongoDB"}/>*/}
-                <img className="tech-logo" src={"/images/mysql-.svg"} alt={"MySQL"}/>
-                <img className="tech-logo" src={"/images/react.svg"} alt={"ReactJS"}/>
-                <img className="tech-logo" src={"/images/typescript.svg"} alt={"TypeScript"}/>
-                <img className="tech-logo" src={"/images/javascript-.svg"} alt={"JavaScript"}/>
-                <img className="tech-logo" src={"/images/html5-balck-icon.svg"} alt={"HTML"}/>
-                <img className="tech-logo" src={"/images/css-4.svg"} alt={"CSS"}/>
-                <img className={"tech-logo"} src={"/images/github_black_logo_icon_147128.svg"} alt={"GitHub logo"}/>
+            <div className={"skills"}>
+                {/*<CustomTooltip  title={"Java"} arrow placement={"bottom"} >*/}
+                {/*    <img className="tech-logo" src={"/images/java-4-logo.svg"}  alt={"Java"}/>*/}
+                {/*</CustomTooltip>*/}
                 
-            </p>
+                {/*/!*<img className="tech-logo" src={"/images/Python_icon_(black_and_white).svg"} title={"Python"} alt={"Python"}/>*!/*/}
+                {/*<img className="tech-logo" src={"/images/spring_logo.svg"} title={"Spring"} alt={"Spring"}/>*/}
+                {/*<img className={"tech-logo"} src={"/images/nodejs-icon-logo.svg"} title={"NodeJS"} alt={"NodeJS"}/>*/}
+                {/*/!*<img className="tech-logo" src={"/images/mongodb.svg"} title={"MongoDB"} alt={"MongoDB"}/>*!/*/}
+                {/*<img className="tech-logo" src={"/images/mysql-.svg"} title={"MySQL"} alt={"MySQL"}/>*/}
+                {/*<img className="tech-logo" src={"/images/react.svg"} title={"ReactJS"} alt={"ReactJS"}/>*/}
+                {/*<img className="tech-logo" src={"/images/typescript.svg"} title={"TypeScript"} alt={"TypeScript"}/>*/}
+                {/*<img className="tech-logo" src={"/images/javascript-.svg"} title={"JavaScript"} alt={"JavaScript"}/>*/}
+                {/*<img className="tech-logo" src={"/images/html5-balck-icon.svg"} title={"HTML"} alt={"HTML"}/>*/}
+                {/*<img className="tech-logo" src={"/images/css-4.svg"} title={"CSS"}  alt={"CSS"}/>*/}
+                {/*<img className={"tech-logo-link"} src={"/images/github_black_logo_icon_147128.svg"} title={"GitHub"} alt={"GitHub link"}/>*/}
+
+                <CustomTooltip title={"Java"} arrow placement={"bottom"}>
+                    <img className="tech-logo" src={"/images/java-4-logo.svg"} alt={"Java"} />
+                </CustomTooltip>
+
+                <CustomTooltip title={"Spring"} arrow placement={"bottom"}>
+                    <img className="tech-logo" src={"/images/spring_logo.svg"} alt={"Spring"} />
+                </CustomTooltip>
+                
+                {/*<CustomTooltip title={"Python"} arrow placement={"bottom"}>*/}
+                {/*    <img className="tech-logo" src={"/images/Python_icon_(black_and_white).svg"} alt={"Python"} />*/}
+                {/*</CustomTooltip>*/}
+
+                <CustomTooltip title={"NodeJS"} arrow placement={"bottom"}>
+                    <img className="tech-logo" src={"/images/nodejs-icon-logo.svg"} alt={"NodeJS"} />
+                </CustomTooltip>
+                
+                
+                <CustomTooltip title={"ReactJS"} arrow placement={"bottom"}>
+                    <img className="tech-logo" src={"/images/react.svg"} alt={"ReactJS"} />
+                </CustomTooltip>
+
+                <CustomTooltip title={"TypeScript"} arrow placement={"top"}>
+                    <img className="tech-logo" src={"/images/typescript.svg"} alt={"TypeScript"} />
+                </CustomTooltip>
+
+                <CustomTooltip title={"JavaScript"} arrow placement={"top"}>
+                    <img className="tech-logo" src={"/images/javascript-.svg"} alt={"JavaScript"} />
+                </CustomTooltip>
+
+                <CustomTooltip title={"HTML"} arrow placement={"top"}>
+                    <img className="tech-logo" src={"/images/html5-balck-icon.svg"} alt={"HTML"} />
+                </CustomTooltip>
+
+                <CustomTooltip title={"CSS"} arrow placement={"top"}>
+                    <img className="tech-logo" src={"/images/css-4.svg"} alt={"CSS"} />
+                </CustomTooltip>
+
+                <CustomTooltip title={"MySQL"} arrow placement={"top"}>
+                    <img className="tech-logo" src={"/images/mysql-.svg"} alt={"MySQL"} />
+                </CustomTooltip>
+
+                {/*<CustomTooltip title={"MongoDB"} arrow placement={"top"}>*/}
+                {/*    <img className="tech-logo" src={"/images/mongodb.svg"} alt={"MongoDB"} />*/}
+                {/*</CustomTooltip>*/}
+
+                <CustomTooltip title={"GitHub"} arrow placement={"top"}>
+                    <img className="tech-logo-link" src={"/images/github_black_logo_icon_147128.svg"} alt={"GitHub link"} />
+                </CustomTooltip>
+                
+                
+            </div>
 
             <Button className={"cv-button"}  variant={"contained"} sx={{
                 backgroundColor: 'black',

@@ -7,6 +7,7 @@ import ScrollReveal from "../../Hooks/ScrollReveal";
 const CustomTooltip = styled(({ className, ...props }: TooltipProps) => (
     <Tooltip {...props} arrow classes={{ popper: className }}   slotProps={{
         popper: {
+            
             modifiers: [
                 {
                     name: 'offset',
@@ -14,7 +15,8 @@ const CustomTooltip = styled(({ className, ...props }: TooltipProps) => (
                 }
             ]
         }
-    }} />
+        
+    }}  />
 ))(({ theme }) => ({
     [`& .${tooltipClasses.arrow}`]: {
         color: theme.palette.common.black,

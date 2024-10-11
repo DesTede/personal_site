@@ -1,4 +1,4 @@
-import {Button, styled, Tooltip, tooltipClasses, TooltipProps} from "@mui/material";
+import {/*Button,*/ styled, Tooltip, tooltipClasses, TooltipProps} from "@mui/material";
 import './About.css';
 import React from "react";
 import ScrollReveal from "../../Hooks/ScrollReveal";
@@ -117,18 +117,18 @@ function About(): JSX.Element {
             </div>
             </ScrollReveal>
 
-            <ScrollReveal>
-            <Button className={"cv-button"}  variant={"contained"} sx={{
-                backgroundColor: 'black',
-                color: 'white',
-                '&:hover': {
-                    transition: 'transform 0.3s',
-                }, borderRadius: '40px',
-            }}
-                    download href={"https://drive.google.com/file/d/11se1_3aQWGyJFTSrGnvsKTNePdDsPyId/view?usp=sharing"} target={"_blank"}>
-                Download my CV
-            </Button>
-            </ScrollReveal>
+            {/*<ScrollReveal>*/}
+            {/*<Button className={"cv-button"}  variant={"contained"} sx={{*/}
+            {/*    backgroundColor: 'black',*/}
+            {/*    color: 'white',*/}
+            {/*    '&:hover': {*/}
+            {/*        transition: 'transform 0.3s',*/}
+            {/*    }, borderRadius: '40px',*/}
+            {/*}}*/}
+            {/*        download href={"https://drive.google.com/file/d/11se1_3aQWGyJFTSrGnvsKTNePdDsPyId/view?usp=sharing"} target={"_blank"}>*/}
+            {/*    Download my CV*/}
+            {/*</Button>*/}
+            {/*</ScrollReveal>*/}
         </div>
     );
 }

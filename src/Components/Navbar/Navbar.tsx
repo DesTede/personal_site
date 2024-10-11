@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./Navbar.css"; // Import your CSS file
+import "./Navbar.css"; 
 
 function Navbar({ isVisible, onToggle }: { isVisible: boolean; onToggle: () => void }): JSX.Element {
     const [activeSection, setActiveSection] = useState("");
@@ -36,7 +36,7 @@ function Navbar({ isVisible, onToggle }: { isVisible: boolean; onToggle: () => v
     };
 
     return (
-        <nav className={`navbar ${isVisible ? "" : "hidden"}`}> {/* Toggle visibility based on prop */}
+        <nav className={`navbar ${isVisible ? "" : "hidden"}`}> 
             <div className="menu-icon" onClick={onToggle}>
                 &#9776; {/* Hamburger icon */}
             </div>

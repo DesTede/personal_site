@@ -35,7 +35,7 @@ function About(): JSX.Element {
         <div className={"AboutMe"}>
                 
             <ScrollReveal>
-                <div className={"home-header"}>ABout Me.</div>
+                <div className={"home-header"}>About Me.</div>
             </ScrollReveal>
             
             <ScrollReveal>
